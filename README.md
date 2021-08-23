@@ -1,3 +1,3 @@
-# Technology-Terrain
-a simple one page website for tech company
-https://technologyterrain.com/
+# Maadhyam - Solution
+our official website on progress 
+ttps://maadhyamsolutions.com/
