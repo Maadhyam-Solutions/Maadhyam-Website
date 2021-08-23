@@ -1,4 +1,4 @@
 # Maadhyam - Solution
-our official website on progress 
+our official website in progress 
 
 https://maadhyamsolutions.com/
