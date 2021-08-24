@@ -1,17 +1,18 @@
 {
-  "name": "aabc",
+  "name": "maadhyam-website",
   "version": "1.0.0",
-  "description": "nothin",
   "main": "index.js",
+  "repository": "git@github.com:Maadhyam-Solutions/maadhyam-website.git",
+  "author": "Rojen Maharjan <44132059+rojen11@users.noreply.github.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "concurrently --names \"SASS,WATCH,SERVE\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run sass\" \"npm run sass:watch\" \"npm run serve\"",
-    "serve": "live-server",
-    "sass": "sass style/style.scss style/style.css",
-    "sass:watch": "npm run sass -- --watch"
+    "build": "cross-env NODE_ENV=production tailwindcss -i ./src/style.css -o ./public/assets/css/style.css --minify",
+    "start": "tailwindcss -i ./src/style.css -o ./public/assets/css/style.css --watch"
   },
-  "author": "no",
-  "license": "UNLICENSED",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
   "devDependencies": {
-    "concurrently": "^3.6.1"
+    "cross-env": "^7.0.3"
   }
 }
