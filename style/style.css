@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
 
 body {
   overflow-x: hidden;
@@ -19,10 +20,10 @@ header .nav-item {
 header .fixed-top {
   background-color: black;
   height: 5rem;
-}
+  }
 
-#navbarNav{
-  color: white !important;
+.nav-link:hover {
+  color:red;
 }
 
 #hello{ 
@@ -30,7 +31,6 @@ header .fixed-top {
   margin: auto;
   font-family: 'Bebas Neue', cursive;
 }
-
 
 #into-section {
   background-position: center center;
@@ -40,6 +40,7 @@ header .fixed-top {
   color: white;
   scroll-behavior: smooth;
 }
+
 #into-section .introduction {
   padding-top: 12rem;
 }
@@ -55,7 +56,7 @@ header .fixed-top {
   min-height: 100vh;
 }
 
-.btn-main {
+.btn-main{
   background-color: #f1bb7c;
   color: black !important;
   width: 10rem;
@@ -68,6 +69,15 @@ header .fixed-top {
   text-decoration: none;
   background-color: #94724B;
   color: white !important;
+}
+
+.sub-btn {
+  background-color: black;
+  color: white !important;
+  width: 10rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .hide {
@@ -157,7 +167,7 @@ header .fixed-top {
   height: 35vh;
   width: 18vw;
   background-color: white;
-  color: #4056A1;
+  color: black;
   font-weight: bold;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.13);
   box-sizing: border-box;
@@ -165,7 +175,7 @@ header .fixed-top {
 }
 #services-section .service-card:hover {
   cursor: pointer;
-  border-color: #4056A1;
+  border-color: #f1bb7c;
 }
 #services-section .service-about {
   font-weight: bold;
@@ -445,3 +455,175 @@ header .fixed-top {
 }
 
 /*# sourceMappingURL=style.css.map */
+.text {
+  position: absolute;
+  left: 33rem;
+}
+
+.word {
+  position: absolute;
+  opacity: 0;
+}
+
+.letter {
+  left:9rem;
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.techp {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.flutter {
+  color: #00A8F4;
+}
+
+.python {
+  color: #366C9A;
+}
+
+.django {
+  color: #092C1E;
+}
+
+.js {
+  color: #F7C327;
+}
+
+.bc {
+  color: #2FD4DF;
+}
+
+.shopify {
+  color: #91B943;
+}
+
+.more {
+  color: black;
+}
+
+
+.our-team {
+  margin-top: -20rem;
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #f1bb7c;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f7f5ec;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f1bb7c;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f1bb7c;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: black;
+}
