@@ -42,7 +42,7 @@ header .fixed-top {
 }
 
 #into-section .introduction {
-  padding-top: 12rem;
+  padding-top: 21rem;
 }
 #into-section .projects-button {
   text-decoration: none;
@@ -626,4 +626,12 @@ header .fixed-top {
 .our-team .social li a:hover {
   color: #1369ce;
   background-color: black;
+}
+
+.teamsection {
+  margin-top: 5%;
+}
+
+.teams {
+  margin-top: -23rem;
 }
