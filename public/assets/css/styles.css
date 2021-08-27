@@ -1,0 +1,37 @@
+.nav-item:hover {
+    color: #94724B !important;
+    text-decoration: underline #f1bb7c 1px;
+    text-underline-offset: 1rem;
+}
+
+.btn{
+    background-color: #f1bb7c;
+    color: black !important;
+    width: 10rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+  
+.btn:hover {
+    text-decoration: none;
+    background-color: #94724B;
+    color: white !important;
+}
+
+#services .service-card {
+    height: 33vh;
+    width: 18vw;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.13);
+    box-sizing: border-box;
+    border: solid 2px transparent;
+  }
+
+#services .service-card:hover {
+    cursor: pointer;
+    border-color: #f1bb7c;
+}
+
