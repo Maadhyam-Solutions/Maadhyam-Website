@@ -552,12 +552,23 @@ video {
   position: fixed;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.float-right {
+  float: right;
 }
 
 .m-auto {
@@ -614,6 +625,10 @@ video {
 
 .h-0\.5 {
   height: 0.125rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
@@ -702,6 +717,10 @@ video {
   }
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -748,6 +767,10 @@ video {
   gap: 4rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -757,6 +780,10 @@ video {
 .divide-primary > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(241, 187, 124, var(--tw-divide-opacity));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded {
@@ -788,6 +815,10 @@ video {
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-hero {
@@ -907,6 +938,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -957,6 +993,77 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 768px) {
+  .contact-title {
+    margin-left: 33.33%;
+  }
+}
+
+.carousel-container {
+  margin: auto;
+  width: 0;
+  height: 300px;
+  perspective: 1500px;
+  position: relative;
+  padding-top: 5em;
+}
+
+.carousel-body {
+  width: 100%;
+  position: absolute;
+  float: right;
+  -webkit-animation: rotate360 30s infinite linear;
+          animation: rotate360 30s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 120px;
+  height: 25vh;
+  border-radius: 20%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.carousel-item img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@-webkit-keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:text-3xl {
     font-size: 1.875rem;
@@ -981,6 +1088,10 @@ html {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -991,6 +1102,10 @@ html {
 
   .md\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .md\:w-9\/12 {
+    width: 75%;
   }
 
   .md\:grid-cols-2 {
@@ -1033,6 +1148,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:m-auto {
+    margin: auto;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }

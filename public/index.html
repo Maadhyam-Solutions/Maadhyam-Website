@@ -35,6 +35,34 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="md:hidden">
+                <span class="cursor-pointer" id="menu-button-js">
+                    <img src="assets/images/menu.svg" alt="menu">
+                </span>
+
+                <div class="h-screen w-full fixed inset-0 p-10 bg-black bg-opacity-50 hidden" id="mobile-nav-js">
+                    <span class="float-right cursor-pointer" id="close-button-js">
+                        <img src="assets/images/close.svg" alt="">
+                    </span>
+                    <ul class="flex flex-col text-primary font-bold items-center justify-center h-full gap-20"
+                        id="nav-res-js">
+                        <li class="text-4xl">
+                            <a class="" href="#about-section">About</a>
+                        </li>
+                        <li class="text-4xl">
+                            <a class="" href="#services ">Our Services</a>
+                        </li>
+                        <li class="text-4xl">
+                            <a class="" href=" #technologies">Technologies</a>
+                        </li>
+                        <li class="text-4xl">
+                            <a class="" href="#contact-us">Contact us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -131,17 +159,18 @@
         </div>
 
     </section>
+    <!-- End services section -->
 
 
-    <!-- Technology -->
-    <section class="technologies-section" id="technologies">
+    <!-- Technology section -->
+    <section class="overflow-hidden" id="technologies">
         <div class="pt-20 pb-4 text-center divide-y-2 divide-primary">
             <h2 class="text-2xl lg:text-4xl font-bold">Technologies Used</h2>
         </div>
         <hr class="text-primary m-auto h-0.5 bg-primary " width="200px">
         <div class="w-full z-10">
             <div class="carousel-container">
-                <div class="carousel-body">
+                <div class="carousel-body carousel-body-js">
                     <!-- JS injection -->
                 </div>
             </div>
@@ -149,9 +178,10 @@
         </div>
 
     </section>
+    <!-- End technologies section -->
 
 
-    <!-- Our Team -->
+    <!-- Our Team section -->
     <section id="">
         <div class="pt-20 pb-4 text-center divide-y-2 divide-primary">
             <h2 class="text-2xl lg:text-4xl font-bold">Meet Our Team</h2>
@@ -202,8 +232,11 @@
 
         </div>
     </section>
+    <!-- End our team section -->
 
-    <section id="contact-us" class="flex flex-col lg:flex-row bg-black text-white p-10 md:p-20 gap-10">
+
+    <!-- Contact us section -->
+    <section id="contact-us" class="flex flex-col lg:flex-row bg-black text-primary p-10 md:p-20 gap-10">
         <div class="w-full lg:w-1/2">
             <p>For more info you can contact us with the following methods, if you are ready to start the project then
                 fill on the form.</p>
@@ -218,9 +251,9 @@
 
             </div>
         </div>
-        <div class="m-auto w-full lg:w-1/2">
-            <p class="text-xl">Contact us</p>
-            <form class="w-full max-w-sm">
+        <div class="m-auto md:m-0 lg:m-auto w-full md:w-9/12">
+            <p class="text-2xl font-bold w:2/3 md:ml-1/3 contact-title text-center lg:text-start">Contact us</p>
+            <form class="w-full py-4">
                 <!-- Name -->
                 <div class="md:flex md:items-center mb-6">
                     <div class="md:w-1/3">
@@ -238,8 +271,7 @@
                 <!-- Email -->
                 <div class="md:flex md:items-center mb-6">
                     <div class="md:w-1/3">
-                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                            for="inline-email">
+                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-email">
                             Email
                         </label>
                     </div>
@@ -266,8 +298,7 @@
                 <!-- Message -->
                 <div class="md:flex md:items-start mb-6 ">
                     <div class="md:w-1/3">
-                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                            for="message">
+                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="message">
                             Message
                         </label>
                     </div>
@@ -275,15 +306,14 @@
                         <textarea
                             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="message" type="text" value=""></textarea>
-                  </div>
+                    </div>
                 </div>
 
-                
-                
-              </form>
+            </form>
         </div>
 
     </section>
+    <!-- End contact us section -->
 
 
 </body>
