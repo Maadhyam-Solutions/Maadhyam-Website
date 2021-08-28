@@ -173,10 +173,12 @@ header .fixed-top {
   box-sizing: border-box;
   border: solid 2px transparent;
 }
+
 #services-section .service-card:hover {
   cursor: pointer;
   border-color: #f1bb7c;
 }
+
 #services-section .service-about {
   font-weight: bold;
 }
