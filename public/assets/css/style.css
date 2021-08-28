@@ -829,6 +829,18 @@ video {
   background-image: url('../images/about.png');
 }
 
+.bg-start {
+  background-image: url('../images/start.png');
+}
+
+.bg-footer {
+  background-image: url('../images/footer.png');
+}
+
+.bg-sid {
+  background-image: url('../images/sid.jpeg');
+}
+
 .bg-cover {
   background-size: cover;
 }

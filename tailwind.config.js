@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         hero: "url('../images/hero.png')",
         about: "url('../images/about.png')",
+        start: "url('../images/start.png')",
+        footer: "url('../images/footer.png')",
+        sid: "url('../images/sid.jpeg')",
       }),
     },
     colors: {
