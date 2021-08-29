@@ -7,6 +7,11 @@ var technologies = [
   { name: "javascript", image: "javascript.svg" },
   { name: "boostrap", image: "bootstrap.svg" },
   { name: "react", image: "react.svg" },
+  { name: "flutter", image: "flutter.svg" },
+  { name: "django", image: "django.svg" },
+  { name: "python", image: "python.svg" },
+  { name: "node", image: "node.svg" },
+  { name: "dynamics", image: "dynamics.svg" },
 ];
 
 var carouselRotation = 360 / technologies.length;
