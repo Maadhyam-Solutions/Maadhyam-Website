@@ -548,6 +548,10 @@ video {
   border-color: currentColor;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -617,6 +621,10 @@ video {
 
 .h-20 {
   height: 5rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .h-80 {
@@ -843,6 +851,10 @@ video {
 
 .bg-rojen {
   background-image: url('../images/rojen.jpg');
+}
+
+.bg-pukar {
+  background-image: url('../images/pukar.jpeg');
 }
 
 .bg-cover {

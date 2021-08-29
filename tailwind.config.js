@@ -13,6 +13,7 @@ module.exports = {
         footer: "url('../images/footer.png')",
         sid: "url('../images/sid.jpeg')",
         rojen: "url('../images/rojen.jpg')",
+        pukar: "url('../images/pukar.jpeg')",
       }),
     },
     colors: {
