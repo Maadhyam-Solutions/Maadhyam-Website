@@ -37,14 +37,24 @@
             </div>
 
             <div class="md:hidden">
-                <span class="cursor-pointer" id="menu-button-js">
-                    <img src="assets/images/menu.svg" alt="menu">
-                </span>
 
-                <div class="h-screen w-full fixed inset-0 p-10 bg-black bg-opacity-50 hidden" id="mobile-nav-js">
-                    <span class="float-right cursor-pointer" id="close-button-js">
+                <div class="relative nav-icon">
+                    <!-- Menu button -->
+                    <span class="cursor-pointer absolute z-50" id="menu-button-js">
+                        <img src="assets/images/menu.svg" alt="menu">
+                    </span>
+
+                    <!-- Close button -->
+                    <span class="cursor-pointer hidden absolute z-50" id="close-button-js">
                         <img src="assets/images/close.svg" alt="">
                     </span>
+
+                </div>
+
+                <div class="h-screen w-full fixed inset-0 p-10 bg-black bg-opacity-50 hidden z-40" id="mobile-nav-js">
+                    <!-- <span class="float-right cursor-pointer" id="close-button-js">
+                        <img src="assets/images/close.svg" alt="">
+                    </span> -->
                     <ul class="flex flex-col text-primary font-bold items-center justify-center h-full gap-20"
                         id="nav-res-js">
                         <li class="text-4xl">

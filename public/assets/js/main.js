@@ -44,10 +44,16 @@ var navButtons = document.querySelector("#nav-res-js");
 
 menuButton.addEventListener("click", function () {
   mobileNav.classList.remove("hidden");
+
+  menuButton.classList.add("hidden");
+  closeButton.classList.remove("hidden");
 });
 
 function hideMenu() {
   mobileNav.classList.add("hidden");
+
+  menuButton.classList.remove("hidden");
+  closeButton.classList.add("hidden");
 }
 
 closeButton.addEventListener("click", hideMenu);
