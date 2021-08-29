@@ -13,7 +13,7 @@ module.exports = {
         about: "url('../images/about.png')",
         start: "url('../images/start.png')",
         footer: "url('../images/footer.png')",
-        sid: "url('../images/sid.jpeg')",
+        sid: "url('../images/sid.jpg')",
         rojen: "url('../images/rojen.jpg')",
         pukar: "url('../images/pukar.jpeg')",
       }),
