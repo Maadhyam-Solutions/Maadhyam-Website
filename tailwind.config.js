@@ -16,6 +16,7 @@ module.exports = {
         sid: "url('../images/sid.jpg')",
         rojen: "url('../images/rojen.jpg')",
         pukar: "url('../images/pukar.jpeg')",
+        pari: "url('../images/pari.jpg')",
       }),
     },
     colors: {

@@ -648,10 +648,6 @@ video {
   height: 20rem;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-0\.5 {
   height: 0.125rem;
 }
@@ -872,6 +868,10 @@ video {
 
 .bg-pukar {
   background-image: url('../images/pukar.jpeg');
+}
+
+.bg-pari {
+  background-image: url('../images/pari.jpg');
 }
 
 .bg-cover {
