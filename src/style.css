@@ -64,3 +64,8 @@ html {
     transform: rotateY(360deg);
   }
 }
+
+.nav-icon {
+  width: 36px;
+  height: 36px;
+}
