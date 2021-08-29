@@ -886,6 +886,10 @@ video {
   background-image: url('../images/pukar.jpeg');
 }
 
+.bg-pari {
+  background-image: url('../images/pari.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
