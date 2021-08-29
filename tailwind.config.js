@@ -12,6 +12,7 @@ module.exports = {
         start: "url('../images/start.png')",
         footer: "url('../images/footer.png')",
         sid: "url('../images/sid.jpeg')",
+        rojen: "url('../images/rojen.jpg')",
       }),
     },
     colors: {
