@@ -59,3 +59,24 @@ function hideMenu() {
 closeButton.addEventListener("click", hideMenu);
 
 navButtons.addEventListener("click", hideMenu);
+
+//email submit button
+var emailButton = document.querySelector("#mailsubmit-js");
+var full_name = document.querySelector("#inline-full-name");
+var subject = document.querySelector("#inline-subject");
+var message = document.querySelector("#message");
+
+
+function submitEmail(e) {
+  e.preventDefault();
+  var full_name_value = full_name.value;
+  var subject_value = subject.value;
+  var message_value = message.value.replace(/\n/g, "%0D%0A");
+  var link = "mailto:maadhyamsolutions@gmail.com?subject=" + subject_value + "&body=" + message_value + " " + "%0D%0A" + "%0D%0A" + full_name_value;
+  window.open(link, "_blank");
+  full_name.value = "";
+  subject.value = "";
+  message.value = "";
+}
+
+emailButton.addEventListener("submit", submitEmail);
