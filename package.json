@@ -6,8 +6,8 @@
   "author": "Rojen Maharjan <44132059+rojen11@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "cross-env NODE_ENV=production tailwindcss -i ./src/style.css -o ./public/assets/css/style.css --minify",
-    "start": "tailwindcss -i ./src/style.css -o ./public/assets/css/style.css --watch"
+    "build": "cross-env NODE_ENV=production tailwindcss -i ./src/style.css -o ./assets/css/style.css --minify",
+    "start": "tailwindcss -i ./src/style.css -o ./assets/css/style.css --watch"
   },
   "dependencies": {
     "tailwindcss": "^2.2.7"
